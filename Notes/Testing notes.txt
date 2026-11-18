@@ -1,0 +1,14 @@
+BrightMart Prototype Testing
+
+TC01 - Valid Login - PASS
+TC02 - Invalid Login - PASS
+TC03 - Add Product - PASS
+TC04 - Invalid Product Quantity - PASS
+TC05 - Add Supplier - PASS
+TC06 - Supplier Referential Integrity - PASS
+TC07 - Complete Sale and Stock Reduction - PASS
+TC08 - Insufficient Stock Validation - PASS
+TC09 - Low Stock Detection - PASS
+TC10 - Role-Based Access - PASS
+TC11 - Daily Sales Report - PASS
+TC12 - Current Inventory Report - PASS

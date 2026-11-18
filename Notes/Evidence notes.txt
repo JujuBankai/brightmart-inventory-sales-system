@@ -1,0 +1,35 @@
+01_login.png
+Purpose: Shows user authentication interface.
+
+02_store_manager_dashboard.png
+Purpose: Shows Store Manager access to all main system functions.
+
+03_product_management.png
+Purpose: Shows product CRUD interface and saved database records.
+
+04_supplier_management.png
+Purpose: Shows supplier CRUD functionality.
+
+05_record_sale.png
+Purpose: Shows product selection, quantity input and total calculation.
+
+06_sale_completed.png
+Purpose: Confirms successful database transaction.
+
+07_insufficient_stock.png
+Purpose: Shows stock validation preventing overselling.
+
+08_low_stock.png
+Purpose: Shows automatic low-stock identification.
+
+09_daily_sales_report.png
+Purpose: Shows sales transactions retrieved from the database.
+
+10_inventory_report.png
+Purpose: Shows current inventory reporting.
+
+11_sales_staff_access.png
+Purpose: Demonstrates Sales Staff role restrictions.
+
+12_business_owner_access.png
+Purpose: Demonstrates Business Owner role restrictions.
