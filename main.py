@@ -1660,6 +1660,122 @@ def open_reports(full_name, role):
         )
         back_button.pack(pady=10)
 
+def show_login():
+    # Clear the current screen
+    for widget in root.winfo_children():
+        widget.destroy()
+
+    # Clear the logged-in user
+    root.current_user_id = None
+
+    # Main heading
+    title_label = tk.Label(
+        root,
+        text="BrightMart Inventory & Sales Management System",
+        font=("Arial", 20, "bold")
+    )
+    title_label.pack(pady=50)
+
+    # Login heading
+    login_label = tk.Label(
+        root,
+        text="Login",
+        font=("Arial", 16, "bold")
+    )
+    login_label.pack(pady=10)
+
+    # Username
+    username_label = tk.Label(
+        root,
+        text="Username"
+    )
+    username_label.pack()
+
+    global username_entry
+
+    username_entry = tk.Entry(
+        root,
+        width=30
+    )
+    username_entry.pack(pady=5)
+
+    # Password
+    password_label = tk.Label(
+        root,
+        text="Password"
+    )
+    password_label.pack()
+
+    global password_entry
+
+    password_entry = tk.Entry(
+        root,
+        width=30,
+        show="*"
+    )
+    password_entry.pack(pady=5)
+
+    # Login button
+    login_button = tk.Button(
+        root,
+        text="Login",
+        width=15,
+        command=login
+    )
+    login_button.pack(pady=20)
+
+def show_login():
+    # Clear the current screen
+    for widget in root.winfo_children():
+        widget.destroy()
+
+    # Clear current logged-in user
+    root.current_user_id = None
+
+    # Main heading
+    title_label = tk.Label(
+        root,
+        text="BrightMart Inventory & Sales Management System",
+        font=("Arial", 20, "bold")
+    )
+    title_label.pack(pady=50)
+
+    # Login heading
+    login_label = tk.Label(
+        root,
+        text="Login",
+        font=("Arial", 16, "bold")
+    )
+    login_label.pack(pady=10)
+
+    # Username
+    username_label = tk.Label(root, text="Username")
+    username_label.pack()
+
+    global username_entry
+    username_entry = tk.Entry(root, width=30)
+    username_entry.pack(pady=5)
+
+    # Password
+    password_label = tk.Label(root, text="Password")
+    password_label.pack()
+
+    global password_entry
+    password_entry = tk.Entry(
+        root,
+        width=30,
+        show="*"
+    )
+    password_entry.pack(pady=5)
+
+    # Login button
+    login_button = tk.Button(
+        root,
+        text="Login",
+        width=15,
+        command=login
+    )
+    login_button.pack(pady=20)
 
 def open_dashboard(full_name, role):
     # Remove the login screen
@@ -1682,7 +1798,7 @@ def open_dashboard(full_name, role):
     )
     welcome_label.pack(pady=10)
 
-        # Store Manager functions
+    # Store Manager functions
     if role == "Store Manager":
 
         products_button = tk.Button(
@@ -1771,6 +1887,16 @@ def open_dashboard(full_name, role):
             command=lambda: open_reports(full_name, role)
         )
         reports_button.pack(pady=5)
+
+    # Logout button
+    logout_button = tk.Button(
+        root,
+        text="Logout",
+        width=20,
+        height=2,
+        command=show_login
+    )
+    logout_button.pack(pady=15)
 
 def login():
     username = username_entry.get()
